@@ -210,9 +210,33 @@ mod tests {
     }
 
     #[test]
-    fn reads_branch_of_this_repo() {
-        // This repo was created with `cargo init --vcs git`, so HEAD points at a branch.
-        let root = Path::new(env!("CARGO_MANIFEST_DIR"));
-        assert!(git_branch(root).is_some());
+    fn reads_branch_from_head() {
+        // Self-contained: CI checks tags out with a detached HEAD, so don't use this repo.
+        let dir = std::env::temp_dir().join(format!("grok-rpc-git-{}", std::process::id()));
+        let _ = fs::remove_dir_all(&dir);
+        let repo = dir.join("repo");
+        fs::create_dir_all(repo.join(".git")).unwrap();
+
+        fs::write(repo.join(".git/HEAD"), "ref: refs/heads/feature/x\n").unwrap();
+        assert_eq!(git_branch(&repo).as_deref(), Some("feature/x"));
+
+        fs::write(
+            repo.join(".git/HEAD"),
+            "0f9c261aa0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5\n",
+        )
+        .unwrap();
+        assert_eq!(git_branch(&repo), None, "detached HEAD has no branch");
+
+        // Worktree: `.git` is a file pointing at the real git dir.
+        let wt = dir.join("wt");
+        let wt_git = dir.join("wt-gitdir");
+        fs::create_dir_all(&wt).unwrap();
+        fs::create_dir_all(&wt_git).unwrap();
+        fs::write(wt.join(".git"), format!("gitdir: {}\n", wt_git.display())).unwrap();
+        fs::write(wt_git.join("HEAD"), "ref: refs/heads/main\n").unwrap();
+        assert_eq!(git_branch(&wt).as_deref(), Some("main"));
+
+        assert_eq!(git_branch(&dir.join("not-a-repo")), None);
+        let _ = fs::remove_dir_all(&dir);
     }
 }
