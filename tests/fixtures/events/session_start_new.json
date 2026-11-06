@@ -1,0 +1,12 @@
+{
+  "hookEventName": "session_start",
+  "sessionId": "01a197b1-fc52-7730-91d8-a10feed9c149",
+  "cwd": "/home/latte/Documents/grok-build-rpc",
+  "workspaceRoot": "/home/latte/Documents/grok-build-rpc",
+  "timestamp": "2026-11-01T15:19:47.474742345+00:00",
+  "permissionMode": "bypassPermissions",
+  "source": "new",
+  "hook_event_name": "SessionStart",
+  "session_id": "01a197b1-fc52-7730-91d8-a10feed9c149",
+  "permission_mode": "bypassPermissions"
+}

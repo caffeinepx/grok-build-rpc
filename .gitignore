@@ -1,0 +1,13 @@
+/target
+captured.jsonl
+
+# Personal dev notes and local tooling (not published)
+CLAUDE.md
+Grok-Fluff.md
+.grok/
+.claude/
+docs/design.md
+docs/grok-reference.md
+docs/capture-hook.example.json
+.agents/
+skills-lock.json

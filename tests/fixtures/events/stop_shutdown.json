@@ -1,0 +1,16 @@
+{
+  "hookEventName": "stop",
+  "sessionId": "01a197b2-a078-7f83-9cd2-1ac8bae6e13e",
+  "cwd": "/home/latte/Documents/grok-build-rpc",
+  "workspaceRoot": "/home/latte/Documents/grok-build-rpc",
+  "timestamp": "2026-11-01T15:21:53.955519472+00:00",
+  "transcriptPath": "/home/latte/.grok/sessions/%2Fhome%2Flatte%2FDocuments%2Fgrok-build-rpc/01a197b2-a078-7f83-9cd2-1ac8bae6e13e/updates.jsonl",
+  "permissionMode": "bypassPermissions",
+  "reason": "shutdown",
+  "stopHookActive": false,
+  "hook_event_name": "Stop",
+  "session_id": "01a197b2-a078-7f83-9cd2-1ac8bae6e13e",
+  "transcript_path": "/home/latte/.grok/sessions/%2Fhome%2Flatte%2FDocuments%2Fgrok-build-rpc/01a197b2-a078-7f83-9cd2-1ac8bae6e13e/updates.jsonl",
+  "permission_mode": "bypassPermissions",
+  "stop_hook_active": false
+}

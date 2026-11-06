@@ -1,0 +1,76 @@
+{
+  "hookEventName": "post_tool_use",
+  "sessionId": "01a197b2-a078-7f83-9cd2-1ac8bae6e13e",
+  "cwd": "/home/latte/Documents/grok-build-rpc",
+  "workspaceRoot": "/home/latte/Documents/grok-build-rpc",
+  "timestamp": "2026-11-01T15:21:40.391693506+00:00",
+  "transcriptPath": "/home/latte/.grok/sessions/%2Fhome%2Flatte%2FDocuments%2Fgrok-build-rpc/01a197b2-a078-7f83-9cd2-1ac8bae6e13e/updates.jsonl",
+  "permissionMode": "bypassPermissions",
+  "toolName": "write",
+  "toolUseId": "call-5d6c4763-9a5f-42e6-9525-98fd99636066-0",
+  "toolInput": {
+    "file_path": "/home/latte/Documents/grok-build-rpc/groktest-output.txt",
+    "content": "hi\n"
+  },
+  "toolResult": {
+    "type": "SearchReplace",
+    "EditsApplied": {
+      "old_string": "",
+      "new_string": "hi\n",
+      "tool_output_for_prompt": "The file /home/latte/Documents/grok-build-rpc/groktest-output.txt has been created.",
+      "tool_output_for_prompt_concise": "The file /home/latte/Documents/grok-build-rpc/groktest-output.txt has been created.",
+      "absolute_path": "/home/latte/Documents/grok-build-rpc/groktest-output.txt",
+      "edits": {
+        "details": [
+          {
+            "old_string": "",
+            "old_line": 1,
+            "new_string": "hi\n",
+            "new_line": 1,
+            "context_before": "",
+            "context_after": "",
+            "line_prefix": ""
+          }
+        ]
+      }
+    }
+  },
+  "toolInputTruncated": false,
+  "toolResultTruncated": false,
+  "durationMs": 5,
+  "isBackgrounded": false,
+  "hook_event_name": "PostToolUse",
+  "session_id": "01a197b2-a078-7f83-9cd2-1ac8bae6e13e",
+  "transcript_path": "/home/latte/.grok/sessions/%2Fhome%2Flatte%2FDocuments%2Fgrok-build-rpc/01a197b2-a078-7f83-9cd2-1ac8bae6e13e/updates.jsonl",
+  "permission_mode": "bypassPermissions",
+  "tool_name": "write",
+  "tool_input": {
+    "file_path": "/home/latte/Documents/grok-build-rpc/groktest-output.txt",
+    "content": "hi\n"
+  },
+  "tool_response": {
+    "type": "SearchReplace",
+    "EditsApplied": {
+      "old_string": "",
+      "new_string": "hi\n",
+      "tool_output_for_prompt": "The file /home/latte/Documents/grok-build-rpc/groktest-output.txt has been created.",
+      "tool_output_for_prompt_concise": "The file /home/latte/Documents/grok-build-rpc/groktest-output.txt has been created.",
+      "absolute_path": "/home/latte/Documents/grok-build-rpc/groktest-output.txt",
+      "edits": {
+        "details": [
+          {
+            "old_string": "",
+            "old_line": 1,
+            "new_string": "hi\n",
+            "new_line": 1,
+            "context_before": "",
+            "context_after": "",
+            "line_prefix": ""
+          }
+        ]
+      }
+    }
+  },
+  "tool_use_id": "call-5d6c4763-9a5f-42e6-9525-98fd99636066-0",
+  "duration_ms": 5
+}

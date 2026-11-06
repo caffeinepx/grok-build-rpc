@@ -1,0 +1,15 @@
+{
+  "hookEventName": "user_prompt_submit",
+  "sessionId": "01a197b2-a078-7f83-9cd2-1ac8bae6e13e",
+  "cwd": "/home/latte/Documents/grok-build-rpc",
+  "workspaceRoot": "/home/latte/Documents/grok-build-rpc",
+  "timestamp": "2026-11-01T15:21:37.501814696+00:00",
+  "transcriptPath": "/home/latte/.grok/sessions/%2Fhome%2Flatte%2FDocuments%2Fgrok-build-rpc/01a197b2-a078-7f83-9cd2-1ac8bae6e13e/updates.jsonl",
+  "promptId": "c63dd444-da17-4807-9d22-c33cbcfce158",
+  "permissionMode": "bypassPermissions",
+  "prompt": "put hi in a text file named groktest-output.txt",
+  "hook_event_name": "UserPromptSubmit",
+  "session_id": "01a197b2-a078-7f83-9cd2-1ac8bae6e13e",
+  "transcript_path": "/home/latte/.grok/sessions/%2Fhome%2Flatte%2FDocuments%2Fgrok-build-rpc/01a197b2-a078-7f83-9cd2-1ac8bae6e13e/updates.jsonl",
+  "permission_mode": "bypassPermissions"
+}

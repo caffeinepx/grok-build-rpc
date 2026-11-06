@@ -1,0 +1,23 @@
+[package]
+name = "grok-rpc"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.89"
+description = "Discord Rich Presence for Grok Build"
+license = "MIT"
+repository = "https://github.com/caffeinepx/grok-build-rpc"
+readme = "README.md"
+keywords = ["discord", "rich-presence", "grok", "rpc"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+clap = { version = "4.6.7", features = ["derive"] }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.154"
+toml = "1.1.8"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
