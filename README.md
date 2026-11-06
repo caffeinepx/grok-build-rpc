@@ -37,7 +37,7 @@ curl -fsSL https://raw.githubusercontent.com/caffeinepx/grok-build-rpc/main/inst
 
 Then open a new Grok session. That's it.
 
-The script installs to `~/.local/bin` without sudo and asks whether to start at login with systemd. Add `sh -s -- --systemd`, `--version v0.1.0` or `--uninstall` to skip the question or do something else. You can also grab a binary from [Releases](https://github.com/caffeinepx/grok-build-rpc/releases) or build it with `cargo install --git https://github.com/caffeinepx/grok-build-rpc`, then run `grok-rpc install`.
+The script installs to `~/.local/bin` without sudo and asks whether to start at login with systemd. Add `sh -s -- --systemd`, `--version v0.1.1` or `--uninstall` to skip the question or do something else. You can also grab a binary from [Releases](https://github.com/caffeinepx/grok-build-rpc/releases) or build it with `cargo install --git https://github.com/caffeinepx/grok-build-rpc`, then run `grok-rpc install`.
 
 ## Presets
 

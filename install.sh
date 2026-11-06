@@ -2,7 +2,7 @@
 # grok-rpc installer: Discord Rich Presence for Grok Build.
 #
 #   curl -fsSL https://raw.githubusercontent.com/caffeinepx/grok-build-rpc/main/install.sh | sh
-#   ... | sh -s -- --systemd | --no-systemd | --version v0.1.0 | --uninstall
+#   ... | sh -s -- --systemd | --no-systemd | --version v0.1.1 | --uninstall
 #
 # Installs for the current user only (no sudo): binary in ~/.local/bin, Grok hook in
 # ~/.grok/hooks/grok-rpc.json, config in ~/.config/grok-rpc/. Running it again updates.
@@ -28,7 +28,7 @@ while [ $# -gt 0 ]; do
         --no-systemd) SYSTEMD="no" ;;
         --uninstall) ACTION="uninstall" ;;
         --version)
-            [ $# -ge 2 ] || die "--version needs a value, e.g. --version v0.1.0"
+            [ $# -ge 2 ] || die "--version needs a value, e.g. --version v0.1.1"
             VERSION="$2"
             shift
             ;;
